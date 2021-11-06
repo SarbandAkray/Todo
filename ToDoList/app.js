@@ -43,9 +43,6 @@ function addTodo(event){
     todoList.appendChild(todoDiv);
     //clear the input value
     todoInput.value='';
-
-    //reload the page
-    location.reload();
 }
 
 function deleteCheck(e){
@@ -125,14 +122,9 @@ function getTodos(){
     todoDiv.classList.add('todo');
     //create LI
     const newTodo = document.createElement('li');
+    newTodo.innerText = todo;
     newTodo.classList.add('todo-item');
     todoDiv.appendChild(newTodo);
-    //create P
-    const newTodoP = document.createElement('P');
-    newTodoP.innerText = todo;
-    newTodoP.classList.add('todo-P');
-    newTodo.appendChild(newTodoP);
-
 
     //check mark button
     const completedButton = document.createElement('button');
