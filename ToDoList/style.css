@@ -133,6 +133,13 @@ select{
     background: white;
     color: #ff6f47;
 }
+.author{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    
+}
+
 /*  MOBILE VIEW */
 
 @media screen and (max-width:450px) {
@@ -156,6 +163,5 @@ form{
     white-space: normal;
     padding: 10px;
 }
-
 
 }
